@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   post "/graphql", to: "graphql#execute"
 
   resources :users, only: [:create]
+  post "/login", to: "login#create"
 
 end
